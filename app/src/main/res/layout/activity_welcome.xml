@@ -18,7 +18,8 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/welcomescreenbg"
         tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="125dp" />
+        tools:layout_editor_absoluteY="125dp"
+        android:contentDescription="@string/welcome_background" />
 
     <ImageView
         android:id="@+id/ivWelcomeLogo"
@@ -29,7 +30,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/swooshlogo"
-        tools:layout_editor_absoluteY="6dp" />
+        tools:layout_editor_absoluteY="6dp"
+        android:contentDescription="@string/welcome_logo" />
 
     <TextView
         android:id="@+id/tvWelcomeSlogan1"
@@ -40,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="100dp"
         android:textColor="#FFFFFF"
-        android:text="GO ALL IN"
+        android:text="@string/go_all_in"
         android:textSize="50sp"
         tools:layout_editor_absoluteX="183dp"
         tools:layout_editor_absoluteY="188dp" />
@@ -52,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvWelcomeSlogan1"
         app:layout_constraintStart_toStartOf="@id/tvWelcomeSlogan1"
         app:layout_constraintEnd_toEndOf="@id/tvWelcomeSlogan1"
-        android:text="ON GOING ALL OUT"
+        android:text="@string/on_going_all_out"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="185dp"
@@ -66,7 +68,7 @@
         app:layout_constraintStart_toStartOf="@id/tvWelcomeSlogan2"
         app:layout_constraintEnd_toEndOf="@id/tvWelcomeSlogan2"
         app:layout_constraintTop_toBottomOf="@id/tvWelcomeSlogan2"
-        android:text="Find a team in your city &amp; dominate the league"
+        android:text="@string/find_a_team_in_your_city_amp_dominate_the_league"
         android:textColor="#FFFFFF"
         android:gravity="center_horizontal"
         tools:layout_editor_absoluteX="192dp"
@@ -77,7 +79,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Get Started"
+        android:text="@string/get_started"
         android:textColor="#FFFFFF"
         android:background="@drawable/swoosh_button"
         app:layout_constraintBottom_toBottomOf="parent"
