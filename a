@@ -1,0 +1,35 @@
+[33mcommit ec2a6829d36febd4038537a4da743515749ca1a8[m[33m ([m[1;36mHEAD -> [m[1;32mnew_branch[m[33m, [m[1;31morigin/new_branch[m[33m)[m
+Author: Cuong Phan <vcuong0909@gmail.com>
+Date:   Fri Jul 30 16:10:30 2021 -0400
+
+    added finish activity and finish layout
+
+[33mcommit 796c62dca4d2288e6a121e58da3a478971d64e83[m
+Author: Cuong Phan <vcuong0909@gmail.com>
+Date:   Fri Jul 30 15:19:35 2021 -0400
+
+    buttoning up the activity
+
+[33mcommit 956576087dffcb07bb85b5640bf4796233ecdd42[m
+Author: Cuong Phan <vcuong0909@gmail.com>
+Date:   Fri Jul 30 14:50:30 2021 -0400
+
+    created skill activity and skill layout
+
+[33mcommit d281c5fa2e5f1fa621a5ff0daaa7e0832df4fac0[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Cuong Phan <vcuong0909@gmail.com>
+Date:   Fri Jul 30 12:05:28 2021 -0400
+
+    fixed layout, add 1 league activity and league layout
+
+[33mcommit 10e972aba4c46c0e2b02570200ff9bfb67dc6897[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Cuong Phan <vcuong0909@gmail.com>
+Date:   Fri Jul 30 00:10:01 2021 -0400
+
+    second commit
+
+[33mcommit 710a6440636e1f63857c8858e112e8b5647d9230[m
+Author: Cuong Phan <vcuong0909@gmail.com>
+Date:   Thu Jul 29 23:01:00 2021 -0400
+
+    initial commit
