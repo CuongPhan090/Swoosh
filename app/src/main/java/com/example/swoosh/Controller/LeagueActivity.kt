@@ -3,13 +3,18 @@ package com.example.swoosh.Controller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.util.Log
 import android.widget.Toast
-import com.example.swoosh.EXTRA_LEAGUE
+import com.example.swoosh.EXTRA_PLAYER
+import com.example.swoosh.Model.Player
 import com.example.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : AppCompatActivity() {
-    var selectedLeague = ""
+
+    var player = Player("","")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_league)
@@ -17,25 +22,25 @@ class LeagueActivity : AppCompatActivity() {
         tbLeagueMens.setOnClickListener{
             tbLeagueWomens.isChecked = false
             tbLeagueCoed.isChecked = false
-            selectedLeague = "Mens"
+            player.league = "Mens"
         }
 
         tbLeagueWomens.setOnClickListener{
             tbLeagueMens.isChecked = false
             tbLeagueCoed.isChecked = false
-            selectedLeague = "Womens"
+            player.league = "Womens"
         }
 
         tbLeagueCoed.setOnClickListener{
             tbLeagueWomens.isChecked = false
             tbLeagueMens.isChecked = false
-            selectedLeague = "Co-ed"
+            player.league = "Co-ed"
         }
 
         btnLeagueNext.setOnClickListener() {
             if (tbLeagueWomens.isChecked || tbLeagueMens.isChecked || tbLeagueCoed.isChecked) {
                 val skillIntent = Intent(this, SkillActivity::class.java)
-                skillIntent.putExtra(EXTRA_LEAGUE, selectedLeague)
+                skillIntent.putExtra(EXTRA_PLAYER, player)
                 startActivity(skillIntent)
             }
             else {
@@ -43,5 +48,25 @@ class LeagueActivity : AppCompatActivity() {
             }
 
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.v("Life cycle", "On start")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.v("Life cycle", "on Resume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.v("Life cycle", "on Pause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.v("Life cycle", "on Stop")
     }
 }
