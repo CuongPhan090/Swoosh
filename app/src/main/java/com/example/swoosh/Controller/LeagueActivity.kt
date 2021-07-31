@@ -49,24 +49,4 @@ class LeagueActivity : AppCompatActivity() {
 
         }
     }
-
-    override fun onStart() {
-        super.onStart()
-        Log.v("Life cycle", "On start")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.v("Life cycle", "on Resume")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.v("Life cycle", "on Pause")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.v("Life cycle", "on Stop")
-    }
 }

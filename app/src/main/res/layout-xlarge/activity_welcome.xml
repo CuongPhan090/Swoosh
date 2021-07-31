@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.WelcomeActivity">
+
+
+    <ImageView
+        android:id="@+id/ivWelcomeBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/welcomescreenbg"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="125dp"
+        android:contentDescription="@string/welcome_background" />
+
+    <ImageView
+        android:id="@+id/ivWelcomeLogo"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swooshlogo"
+        tools:layout_editor_absoluteY="6dp"
+        android:contentDescription="@string/welcome_logo" />
+
+    <TextView
+        android:id="@+id/tvWelcomeSlogan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivWelcomeLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/go_all_in"
+        android:textSize="100sp"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <TextView
+        android:id="@+id/tvWelcomeSlogan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeSlogan1"
+        app:layout_constraintStart_toStartOf="@id/tvWelcomeSlogan1"
+        app:layout_constraintEnd_toEndOf="@id/tvWelcomeSlogan1"
+        android:text="@string/on_going_all_out"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/tvWelcomeInstruction"
+        android:layout_width="460dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@id/tvWelcomeSlogan2"
+        app:layout_constraintEnd_toEndOf="@id/tvWelcomeSlogan2"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeSlogan2"
+        android:text="@string/find_a_team_in_your_city_amp_dominate_the_league"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <Button
+        android:id="@+id/btnWelcomeGetStarted"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/get_started"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+
+        android:background="@drawable/swoosh_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

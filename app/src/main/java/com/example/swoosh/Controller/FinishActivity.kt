@@ -16,7 +16,7 @@ class FinishActivity : AppCompatActivity() {
 
         var player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
         if (player != null) {
-            result = "Look for ${player.league} ${player.skill} league near you...\""
+            result = "Look for ${player.league} ${player.skill} league near you..."
         }
         tvFinishInstruction.text = result
     }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.SkillActivity">
+
+    <ImageView
+        android:id="@+id/ivSkillBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/beginnerballerbg"
+        android:contentDescription="@string/skill_background" />
+
+
+    <ImageView
+        android:id="@+id/ivSkillLogo"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/activity_logo" />
+
+
+    <TextView
+        android:id="@+id/tvActivityInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_am_a"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="100dp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSkillLogo" />
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvActivityInstruction" >
+
+        <ToggleButton
+            android:id="@+id/tbSkillBeginner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:textSize="28sp"
+            android:background="@drawable/swoosh_toogle"
+            android:textColor="#FFFFFF"
+            android:textOff="@string/beginner"
+            android:textOn="@string/beginner" />
+
+        <ToggleButton
+            android:id="@+id/tbSkillBaller"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:textSize="28sp"
+            android:background="@drawable/swoosh_toogle"
+            android:textColor="#FFFFFF"
+            android:textOff="@string/baller"
+            android:textOn="@string/baller" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSkillFinish"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textSize="28sp"
+        android:text="@string/finish"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/swoosh_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
